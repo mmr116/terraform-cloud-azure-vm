@@ -124,31 +124,8 @@ After a successful deployment, verify that the Azure VM is created as expected.
 
 **Accessing the VM**
 
-After deployment, access the VM using SSH over private or public IP:
-
-Username: Retrieved from Azure Key Vau
-
-Password: Retrieved from Azure Key Vault.
+After deployment, access the VM using SSH over private or public IP.
 
 # Cleanup
 
 To clean up the deployed resources, use Terraform to destroy them. This can be triggered from the Terraform Cloud interface. (Workspace -> Destruction and Deletion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
