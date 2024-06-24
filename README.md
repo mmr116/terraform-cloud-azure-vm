@@ -124,9 +124,10 @@ After a successful deployment, verify that the Azure VM is created as expected.
 
 **Accessing the VM**
 
-After deployment, access the VM using:
+After deployment, access the VM using SSH over private or public IP:
 
 Username: Retrieved from Azure Key Vau
+
 Password: Retrieved from Azure Key Vault.
 
 # Cleanup
