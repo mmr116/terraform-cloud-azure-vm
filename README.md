@@ -2,7 +2,36 @@
 
 This repository contains Terraform configuration files for deploying an Azure VM using Terraform Cloud. 
 
-# Key Features
+# Key VM Configurations
+
+Azure Location: East US
+
+Availability Zones: Configured for zones 1 and 2
+
+VM Size: Standard_D2s_v3
+
+Operating System: CentOS 7.9
+
+Admin Username and Password: Stored in Azure Key Vault
+
+OS Disk: 30 GB, StandardSSD_LRS
+
+Data Disks: Two 50 GB data disks
+
+Public IP: Dynamic allocation
+
+Network Security Group: Allows SSH access on port 22
+
+Auto Shutdown: Configured at 02:00 UTC with email notification
+
+Backup Policy: Daily retention for 30 days
+
+Tags
+   Cost Center: 
+   
+   Owner: 
+ 
+   Department: 
 
 # Pre-requisites or Assumptions:
 
