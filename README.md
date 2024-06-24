@@ -4,9 +4,11 @@ This repository contains Terraform configuration files for deploying an Azure VM
 
 # Key VM Configurations
 
+Users need to configure the values in the terraform.tfvars file based on their specific requirements before deploying the resources.
+
 Azure Location: East US
 
-Availability Zones: Configured for zones 1 and 2
+Availability Zones: Configured for zones 1 and 2 (default)
 
 VM Size: Standard_D2s_v3
 
@@ -26,12 +28,7 @@ Auto Shutdown: Configured at 02:00 UTC with email notification
 
 Backup Policy: Daily retention for 30 days
 
-Tags
-   Cost Center: 
-   
-   Owner: 
- 
-   Department: 
+Tags: Cost Center, Owner, Department 
 
 # Pre-requisites or Assumptions:
 
