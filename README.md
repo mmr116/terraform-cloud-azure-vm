@@ -50,18 +50,11 @@ Azure Key Vault (key_vault_id) with secrets for admin credentials (username and 
 
 Availability zones (select Region which has multiple availability zones)
 
-
-
-
-
-
-Azure VNET and subnet information are also required. Additionally, an Azure Key Vault (key_vault_id) is required which will store VM's user credentials (username and password) as Key Vault secrets.
-
 **Terraform Cloud Configuration**
 
-Make sure you have Terraform Cloud Account (https://app.terraform.io).
+Make sure you have Terraform Cloud Account (https://app.terraform.io). Tested with Terraform v1.8.2, git version 2.27.0 (installed on CentOS Linux 8)
 
-Additional structure in the Terraform Cloud:
+Additional structure in the Terraform Cloud: 
 
 Terraform Cloud Organization: Create or use an existing organization within your Terraform Cloud account.
 
