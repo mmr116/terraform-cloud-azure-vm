@@ -8,7 +8,28 @@ This repository contains Terraform configuration files for deploying an Azure VM
 
 **Azure Resources**
 
-An Azure subscription with Service Principal which has 'contributor' level access to an existing Azure Resource Group. Azure VNET and subnet information are also required. Additionally, an Azure Key Vault (key_vault_id) is required which will store VM's user credentials (username and password) as Key Vault secrets.
+An Azure subscription with Service Principal which has 'contributor' level access to an existing Azure Resource Group. 
+
+Ensure the following resources are prepared or defined in your Azure environment:
+
+Resource Group (resource_group_name)
+
+Virtual Network (vnet_name)
+
+Subnet (subnet_name)
+
+network security groups, 
+
+Azure Key Vault (key_vault_id) with secrets for admin credentials (username and password)
+
+Availability zones (select Region which has multiple availability zones)
+
+
+
+
+
+
+Azure VNET and subnet information are also required. Additionally, an Azure Key Vault (key_vault_id) is required which will store VM's user credentials (username and password) as Key Vault secrets.
 
 **Terraform Cloud Configuration**
 
@@ -55,7 +76,7 @@ ARM_SUBSCRIPTION_ID, ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID These value
 
 Clone this repository to your local machine:
 
-git clone <<repository-url>>
+git clone repository-url
 
 # Review and Modify Configuration
 
